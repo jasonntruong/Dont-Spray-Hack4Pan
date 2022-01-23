@@ -11,7 +11,7 @@ void setup()
   pinMode(9, INPUT);
   pinMode(13, OUTPUT);
   lcd.begin(16,2);
-  lcd.print("Dont Spray");
+  lcd.print("Dont Spray");  //LCD start screen
   Serial.begin(9600);
 
 }
@@ -24,7 +24,7 @@ void loop()
     if (heldFor < 8) {
       lcd.clear();
       heldFor += 1;
-      lcd.print("Time: " + String(heldFor*100) + "ms!"); 
+      lcd.print("Time: " + String(heldFor*100) + "ms!"); //LCD displays mouse hold times
       delay(100);
     }
 
@@ -53,7 +53,7 @@ void loop()
       sameSpray = false;
       sprayCounter += 1;
       lcd.clear();
-      lcd.print("Sprayed " + String(sprayCounter) + " times");
+      lcd.print("Sprayed " + String(sprayCounter) + " times"); //LCD displays amount of times sprayed
     }
   }
 
