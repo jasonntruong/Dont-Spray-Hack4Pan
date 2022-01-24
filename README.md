@@ -1,4 +1,4 @@
-# Dont-Spray
+# Don't Spray
 Hack4Pan First Place submission
 
 Watch the demo: https://www.twitch.tv/videos/1273582339?t=01h43m01s where I presented to tech youtubers like FryingPan and Ben Awad
