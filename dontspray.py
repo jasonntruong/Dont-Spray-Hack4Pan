@@ -23,7 +23,7 @@ def on_click(x, y, button, pressed):
             print("That last one was", (endTime - startTime)/1000, "ms!")
             if (endTime - startTime) > SPRAYTHRESHOLDMS * 1000:
                 sprayed += 1
-
+                print("\n---------------------------------\n", "You've sprayed", sprayed, "times!", "\n---------------------------------\n")
                 for i in range(0, sprayed):
                     board.digital[13].write(1)
                     board.pass_time(0.1)
