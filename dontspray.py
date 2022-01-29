@@ -20,7 +20,7 @@ def on_click(x, y, button, pressed):
             startTime = datetime.now().second*1000000 + datetime.now().microsecond
         else:
             endTime = datetime.now().second*1000000 + datetime.now().microsecond
-            print("That last one was", (endTime - startTime)/1000, "ms!")
+            print("Last mouse click:", (endTime - startTime)/1000, "ms!")
             if (endTime - startTime) > SPRAYTHRESHOLDMS * 1000:
                 sprayed += 1
                 print("\n---------------------------------\n", "You've sprayed", sprayed, "times!", "\n---------------------------------\n")
